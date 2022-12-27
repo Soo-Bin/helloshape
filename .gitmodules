@@ -1,0 +1,3 @@
+[submodule "shapelib"]
+	path = shapelib
+	url = https://github.com/OSGeo/shapelib.git
