@@ -16,6 +16,9 @@ set(shapelib
     shapelib/shptree.c
 )
 
-include_directories( ${PROJECT_SOURCE_DIR})
+include_directories(${PROJECT_SOURCE_DIR})
+
 add_executable(print_information ${shapelib} print_information.cc)
+
+add_executable(print_geometry ${shapelib} print_geometry.cc)
 

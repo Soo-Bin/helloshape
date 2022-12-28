@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
     // --------------------------------------------------------------------
     for (int iField = 0; iField < DBFGetFieldCount(hDBF); iField++) {
         /************************************************************************/
-        /*                      enum  DBFFieldType()                            */
+        /*                      enum  DBFFieldType                              */
         /*                                                                      */
         /*      FTString, FTInteger, FTDouble, FTLogical, FTDate, FTInvalid     */
         /************************************************************************/
