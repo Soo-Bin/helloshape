@@ -25,3 +25,5 @@ add_executable(print_geometry ${shapelib} print_geometry.cc)
 add_executable(print_rewind ${shapelib} print_rewind.cc)
 
 add_executable(copy_information ${shapelib} copy_information.cc)
+
+add_executable(copy_geometry ${shapelib} copy_geometry.cc)

@@ -5,8 +5,6 @@
 #include <string>
 #include <vector>
 
-#define USE_CASE_A 0
-
 // Shapefile (dbf) field name are at most 10chars + 1 NULL.
 constexpr int MAXFIELDNAMELEN = 12;
 
@@ -42,7 +40,7 @@ int main(int argc, char *argv[]) {
     cout << "* field count : " << DBFGetFieldCount(hDBF) << endl;
     cout << "* total record: " << DBFGetRecordCount(hDBF) << endl << endl;
 
-#if USE_CASE_A
+#ifdef USE_CASE_A
     /************************************************************************/
     /*                              1안                                     */
     /************************************************************************/
