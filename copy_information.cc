@@ -114,6 +114,9 @@ int main(int argc, char *argv[]) {
 
     char *DBFRow = (char *)malloc(hDBF->nRecordLength + 15);
 
+    // --------------------------------------------------------------------
+    //      Save to .dbf file.
+    // --------------------------------------------------------------------
     for (int iRecord = 0; iRecord < DBFGetRecordCount(hDBF); iRecord++) {
         memcpy(DBFRow, DBFReadTuple(hDBF, iRecord), hDBF->nRecordLength);
         DBFWriteTuple(hDBF_res, iRecord, DBFRow);
